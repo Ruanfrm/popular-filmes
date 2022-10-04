@@ -35,3 +35,7 @@ body {
   border-radius: 4rem;
   height: 1rem;
 }
+
+.video {
+  height: 100%;
+}

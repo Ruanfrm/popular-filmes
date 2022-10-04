@@ -6,7 +6,7 @@ import { Container, Movie, MovieList, Title, P, Rodape} from './styles';
 
 function Home() {
 
-  const imagePath = 'https://image.tmdb.org/t/p/w500/'
+  const imagePath = 'https://image.tmdb.org/t/p/w500'
 
   const [movies, setMovies] = useState([])
 
@@ -31,7 +31,10 @@ function Home() {
   }, [])
 
   return (
+  
+    
     <Container>
+
       <Title>Filmes em Destaques</Title>
       <MovieList>
       {movies.map(movie => {

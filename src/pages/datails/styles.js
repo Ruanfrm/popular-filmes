@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+ 
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
+  display: grid;
+  
   padding: 0 3rem;
   
   h1 {
@@ -10,8 +14,10 @@ export const Container = styled.div`
 
   .movie {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: justify;
     height: 100vh;
   }
 
@@ -55,7 +61,7 @@ export const Container = styled.div`
   }
 
   button:hover {
-    background-color: #5848c2;
+    background-color:  #7F00FF;
   }
 
 `;

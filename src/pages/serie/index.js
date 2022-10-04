@@ -7,7 +7,7 @@ import { Container, Title} from "../serie/styles"
 function Series() {
 // Consumir API Série(tv)
 
-    const imagePath = 'https://image.tmdb.org/t/p/w500/'
+    const imagePath = 'https://image.tmdb.org/t/p/w500'
 
 
     const { id } = useParams()
@@ -31,6 +31,7 @@ function Series() {
   }, [id])
 
 
+
     return(
         <Container>
             <div className="serie">
@@ -39,9 +40,13 @@ function Series() {
   <h1>{serie.name}</h1>
   <h3>Nome Original: {serie.name}</h3>
 
-  <span><span className="sinopse">Sinopse<br/><br/></span>{serie.sinopse}</span>
+  <span><span className="sinopse">Sinopse: </span>{serie.sinopse}</span>
   <span className='release-date'>Data de Lançamento: {serie.releaseDate}</span>
   <Link to="/"><button>Voltar</button></Link>
+  <a href="https://warezcdn.com/listing.php?type=series" target="_blank"><button>Assistir</button></a><br />
+  <p>Após redirecionado, busque a serie desejada pelo nome na barra de pesquisa.</p>
+
+
 </div>
 </div>
         </Container>

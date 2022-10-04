@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  display: grid;
 
   padding: 0 3rem;
   
@@ -17,8 +18,10 @@ export const Container = styled.div`
   }
   .serie {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: justify;
     height: 100vh;
   }
 
@@ -71,4 +74,7 @@ export const Title = styled.h1`
     text-align: center;
     margin: 4rem 0;
     color: white;
+  
+  
 `
+

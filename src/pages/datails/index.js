@@ -10,7 +10,7 @@ function Details() {
   const { id } = useParams()
   const [movie, setMovie] = useState([])
 
-  const imagePath = 'https://image.tmdb.org/t/p/w500/'
+  const imagePath = 'https://image.tmdb.org/t/p/w500'
 
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${APIKey.Key}&language=pt-BR`)
@@ -39,6 +39,10 @@ function Details() {
         <span>Sinopse: {movie.sinopse}</span>
         <span className='release-date'>Data de Lançamento: {movie.releaseDate}</span>
         <Link to="/"><button>Voltar</button></Link>
+        <br />
+        <a href="https://warezcdn.com/listing.php?type=movies" target="_black"><button>Assistir</button></a><br />
+  <p>Após redirecionado, busque a serie desejada pelo nome na barra de pesquisa.</p>
+
       </div>
     </div>
   
