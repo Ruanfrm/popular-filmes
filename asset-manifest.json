@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/popular-filmes/static/css/main.1e2130f8.css",
+    "main.js": "/popular-filmes/static/js/main.0c66358b.js",
+    "index.html": "/popular-filmes/index.html",
+    "main.1e2130f8.css.map": "/popular-filmes/static/css/main.1e2130f8.css.map",
+    "main.0c66358b.js.map": "/popular-filmes/static/js/main.0c66358b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e2130f8.css",
+    "static/js/main.0c66358b.js"
+  ]
+}
